@@ -185,6 +185,4 @@ obj-y += mmi_info/
 obj-y += tzlog_dump/
 obj-y += watchdogtest/
 
-# DTS_EAGLE START
 obj-$(CONFIG_AINUR_DTS_SW) += dts_eagle/
-# DTS_EAGLE END

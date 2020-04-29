@@ -12,11 +12,13 @@
  */
 
 /dts-v1/;
+/plugin/;
 
-#include "sdm450-ali.dtsi"
+#include <dt-bindings/clock/msm-clocks-8953.h>
+#include "sdm450-ali-common-overlay.dtsi"
 
 / {
-	qcom,board-id = <0x43 0xC200>, <0x44 0xC200>;
+	qcom,board-id = <0x43 0xC100>;
 	compatible = "qcom,sdm450-ali", "qcom,sdm450-moto",
 			"qcom,sdm450";
 	qcom,msm-id = <338 0x0>;

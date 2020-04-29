@@ -19,7 +19,8 @@
 
 / {
 	model = "ali";
-	compatible = "ali,evt1";
+	compatible = "ali,evt1", "qcom,sdm450-ali", "qcom,sdm450-moto",
+			"qcom,sdm450";
 	qcom,msm-id = <338 0x0>;
 	qcom,board-id = <0x41 0xA100>;
 };

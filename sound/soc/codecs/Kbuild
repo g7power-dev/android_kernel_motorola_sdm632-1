@@ -22,7 +22,6 @@ EXTRA_CFLAGS += -DTFA9874_NONDSP_STEREO
 EXTRA_CFLAGS += -Isound/soc/codecs/inc
 EXTRA_CFLAGS += -Werror
 
-ifeq ($(CONFIG_RIVER_DTB), y)
 cirrus_madera-objs = madera.o madera-slimbus.o
 obj-y += cirrus_madera.o
 
@@ -54,7 +53,6 @@ endif
 
 cirrus_playback-objs = msm-cirrus-playback.o
 obj-y += cirrus_playback.o
-endif
 
 ifeq ($(CONFIG_OCEAN_DTB), y)
 snd_soc_tfa9874-objs += tfa98xx.o
